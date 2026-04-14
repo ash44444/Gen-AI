@@ -10,8 +10,11 @@ app.use(
   cors({
     origin: "https://gen-ai-1-frontend.onrender.com",
     credentials: true,
-  }),
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
 );
+
+app.options("*", cors()); //
 
 /* require all the routes here */
 const authRouter = require("./routes/auth.routes");
