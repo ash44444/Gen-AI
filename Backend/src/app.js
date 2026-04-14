@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "*",
+    origin: "https://gen-ai-nko2.onrender.com/",
     credentials: true,
   }),
 );
