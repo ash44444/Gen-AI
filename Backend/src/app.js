@@ -14,7 +14,7 @@ app.use(
   })
 );
 
-app.options("*", cors()); //
+app.options('/*', cors());
 
 /* require all the routes here */
 const authRouter = require("./routes/auth.routes");
